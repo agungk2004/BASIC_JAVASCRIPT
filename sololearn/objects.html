@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            nama: "Agung",
+            age: 17,
+            favColor: "green",
+            height: 171,
+            weight: 72,
+        }
+
+        var idealnya = (person.height - 100) * 10 / 100 
+        var ideal = (person.weight - idealnya)
+        if(person.weight > 64){var msg = 'obesitas'} else {var msg ='ideal'}
+        alert(person.nama +' beratnya '+ person['weight']+ " berat "+ msg + " idealnya " + ideal)
+    </script>
+</body>
+</html>
+
+<!-- tinggi badan - 100 x 10% - tinggi badan -->
