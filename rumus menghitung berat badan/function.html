@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function tinggibadan(tinggi,berat){
+//  D adalah rumus pertama
+  d= tinggi-100 
+//F dan H adalah kedua
+  f= tinggi-100
+  h= f/10
+// G adalah hasil berat badan ideal
+  g= d-h
+
+  document.write(berat+"\nKG adalah berat badan anda")
+  document.write("<br>")
+  document.write(g+"\nKG adalah berat badan ideal anda")
+  document.write("<br>")
+
+if(berat>g){
+document.write("berat badan anda dikategorikan obesitas")
+}else if (berat<g){
+document.write("berat badan anda dikategorikan kurus")
+}else{
+document.write("berat badan anda dikategorikan ideal")
+}
+}
+tinggibadan(151,43);
+    </script>
+</body>
+</html>
